@@ -1,0 +1,23 @@
+{
+  "name": "test-npm-package",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minz1027/test-npm-package.git"
+  },
+  "author": "Min Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minz1027/test-npm-package/issues"
+  },
+  "homepage": "https://github.com/minz1027/test-npm-package#readme",
+  "devDependencies": {
+    "semantic-release": "^6.3.2"
+  }
+}
