@@ -1,6 +1,6 @@
 {
-  "name": "test-npm-package",
-  "version": "0.0.0-development",
+  "name": "test-npm-package-not-taken",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
