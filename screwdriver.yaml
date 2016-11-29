@@ -1,0 +1,15 @@
+workflow:
+    - publish
+shared:
+    image: node:6
+jobs:
+    main:
+        steps:
+            - print: echo the main jobs started!
+    publish:
+        steps:
+            - install: npm install
+            - semantic-release: npm run semantic-release
+        secrets:
+            - GH_TOKEN
+            - NPM_TOKEN
