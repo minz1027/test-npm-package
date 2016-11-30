@@ -8,7 +8,7 @@ jobs:
             - print: echo the main jobs started!
     publish:
         steps:
-            - install: npm install
+            - install: npm install semantic-release
             - publish: npm publish
         secrets:
             - GH_TOKEN
