@@ -1,11 +1,12 @@
 {
   "name": "test-npm-package-not-taken",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "prepublish": "semantic-release pre",
+    "postpublish": "semantic-release post"
   },
   "repository": {
     "type": "git",
