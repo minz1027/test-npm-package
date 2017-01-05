@@ -10,6 +10,7 @@ jobs:
         steps:
             - install: npm install semantic-release
             - publish: npm run semantic-release
+            - check-version: ./check-version.sh
         secrets:
             - GH_TOKEN
             - NPM_TOKEN
