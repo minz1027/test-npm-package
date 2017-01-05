@@ -8,5 +8,6 @@ if [ ! -f "$GIT_VERSION" ] ; then
 fi
 
 echo "Printing the git version"
+git fetch --tags
 GIT_TAG=`$GIT_VERSION --prefix v show`
 echo $GIT_TAG
