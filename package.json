@@ -17,6 +17,7 @@
     "url": "https://github.com/minz1027/test-npm-package/issues"
   },
   "release": {
+    "debug": false,
     "verifyConditions": {
       "path": "./node_modules/semantic-release/src/lib/plugin-noop.js"
     }
