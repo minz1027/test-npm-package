@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post --debug=true"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,6 @@
     "url": "https://github.com/minz1027/test-npm-package/issues"
   },
   "release": {
-    "debug": true,
     "verifyConditions": {
       "path": "./node_modules/semantic-release/src/lib/plugin-noop.js"
     }
