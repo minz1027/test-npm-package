@@ -6,7 +6,7 @@ jobs:
     main:
         steps:
             - print: echo the main jobs started!
-    publish-s:
+    publishss:
         steps:
             - install: npm install semantic-release
             - publish: npm run semantic-release
