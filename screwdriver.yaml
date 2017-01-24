@@ -8,7 +8,7 @@ jobs:
             - print: echo the main jobs started!
     publishss:
         steps:
-            # - set-env: . ./set-env.sh
+            - set-env: . ./set-env.sh
             - get-env: echo hi $FOO
             - install: npm install semantic-release --progress=false
             - publish: npm run semantic-release
