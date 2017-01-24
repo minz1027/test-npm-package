@@ -1,3 +1,3 @@
 export FOO="BAR"
 echo in $FOO
-exit 0
+exit 1
