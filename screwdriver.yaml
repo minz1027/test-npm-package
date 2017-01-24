@@ -1,7 +1,7 @@
 workflow:
     - publishss
 shared:
-    image: screwdrivercd/launcher:stable
+    image: node:6
 jobs:
     main:
         steps:
