@@ -10,6 +10,7 @@ jobs:
         steps:
             - set-env: . ./set-env.sh
             - get-env: echo hi $FOO
+            - list-env: env
             - install: npm install semantic-release --progress=false
             - publish: npm run semantic-release
             - check-version: ./check-version.sh
