@@ -1,7 +1,7 @@
 workflow:
     - publishss
 shared:
-    image: golang
+    image: node:6
 jobs:
     main:
         steps:
@@ -10,11 +10,9 @@ jobs:
         steps:
             - set-env: . ./set-env.sh
             - get-env: echo hi $FOO
-            - list-env: env
-            - install: npm install semantic-release --progress=false
+            - install: npm install semantic-release
             - publish: npm run semantic-release
             - check-version: ./check-version.sh
-            - fail: exit 1
         secrets:
             - GH_TOKEN
             - NPM_TOKEN
