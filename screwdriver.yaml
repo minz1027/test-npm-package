@@ -5,7 +5,7 @@ shared:
 jobs:
     main:
         steps:
-            - print: "echo main: test"
+            - print: `echo main: test`
             - set-env: . ./set-env.sh
     publishss:
         steps:
