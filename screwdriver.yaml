@@ -6,6 +6,7 @@ jobs:
     main:
         steps:
             - print: echo the main jobs started!
+            - set-env: . ./set-env.sh
     publishss:
         steps:
             - set-env: . ./set-env.sh
