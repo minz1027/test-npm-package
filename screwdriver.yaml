@@ -7,6 +7,7 @@ jobs:
         - echo: echo hello
     publish:
         requires: main
+        image: node:8
         template: screwdriver-cd/semantic-release-node8
         secrets:
         - GH_TOKEN
