@@ -1,5 +1,5 @@
 workflow:
-    - publishss
+    - publish
 shared:
     image: node:6
 jobs:
@@ -7,13 +7,8 @@ jobs:
         steps:
             - print: `echo main: test`
             - set-env: . ./set-env.sh
-    publishss:
-        steps:
-            - set-env: . ./set-env.sh
-            - get-env: echo hi $FOO
-            - install: npm install semantic-release
-            - publish: npm run semantic-release
-            - check-version: ./check-version.sh
+    publish:
+        template: screwdriver-cd/semantic-release-node8
         secrets:
             - GH_TOKEN
             - NPM_TOKEN
