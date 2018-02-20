@@ -1,6 +1,6 @@
 # test-npm-package
 
-# add new stuff to be merged lol
+# add new stuff to be merged 
 
 # merge
 
