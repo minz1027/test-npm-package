@@ -1,14 +1,13 @@
-workflow:
-    - publish
 shared:
     image: node:6
 jobs:
     main:
+        requires: ~commit
         steps:
-            - print: `echo main: test`
-            - set-env: . ./set-env.sh
+        - echo: echo hello
     publish:
+        requires: main
         template: screwdriver-cd/semantic-release-node8
         secrets:
-            - GH_TOKEN
-            - NPM_TOKEN
+        - GH_TOKEN
+        - NPM_TOKEN
